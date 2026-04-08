@@ -94,7 +94,7 @@ app.delete('/students/:id', async (req, res) => {
 
 // 4. DATABASE SYNC & SEED
 async function seedDatabase() {
-    await sequelize.sync({ force: false }); 
+    await sequelize.sync({ force: true }); // This wipes the old tables and creates them with the new rules
 
     // Only seed if the database is empty
     const count = await Student.count();
