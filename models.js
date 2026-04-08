@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('./database');
 
 // 1. Define the Models with Validation
-const Faculty = sequelize.define('Faculty', {
+const Faculty = sequelize.define('faculty', {
     name: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -13,7 +13,7 @@ const Faculty = sequelize.define('Faculty', {
     }
 });
 
-const Lecturer = sequelize.define('Lecturer', {
+const Lecturer = sequelize.define('lecturer', {
     name: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -23,7 +23,7 @@ const Lecturer = sequelize.define('Lecturer', {
     }
 });
 
-const Student = sequelize.define('Student', {
+const Student = sequelize.define('student', {
     name: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -33,7 +33,7 @@ const Student = sequelize.define('Student', {
     }
 });
 
-const Course = sequelize.define('Course', {
+const Course = sequelize.define('course', {
     name: {
         type: DataTypes.STRING,
         allowNull: false,
